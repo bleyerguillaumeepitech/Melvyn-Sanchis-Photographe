@@ -12,6 +12,8 @@ La partie développement a pu commencer une fois la validation des maquettes et 
 
 ## Présentation vidéo📹
 
+
+
 ## Technologies 🛠
 
   ### Frontend 💻
