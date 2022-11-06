@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+  background-color: #000000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/testbg2.png);
+  
+}
+/*
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(img/testbg2.png);
+  padding: 0 0 10rem 0;
+  background-position: center;
+}
+*/
+.row {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  padding: 2rem 0 2rem 0 !important;
+}
+
+nav a {
+    color: #fff;
+    list-style: none;
+    padding: 10px;
+    text-decoration: none !important;
+    transition: 0.5s;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    animation-iteration-count: 1;
+    font-size: 23px;
+}
+
+nav a:hover {
+  color: #fff;
+  opacity: 0.6;
+  transition: 0.5s;
+  border-bottom:  1px solid;
+}
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*contact form*/
+
+
+
+input[type=tel] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 25px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+input[type=text], select, textarea {
+    outline: none;
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: none;
+    border-radius: 25px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #2d2d2d;
+    color: #ccc;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  select {
+
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #2d2d2d;
+    opacity: 0.8;
+    transition: 0.5s;
+
+  }
+  
+  /* Add a background color and some padding around the form */
+  .containerContact {
+    margin: 7rem 0 7rem 0;
+    font-size: 20px;
+    max-width: 768px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+/* fin contact form*/
+
+footer {
+    font-size: 20px;
+    color: #fff;
+    padding: 50px;
+    background-color: #494949 !important;
+}
+
+#footer {
+    background-color: #494949 !important;
+}
+
+#liensDuSite a {
+    display: block;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+#liensDuSite a:hover{
+    opacity: 0.6;
+    color: #fff;
+    transition: 0.7s;
+}
+
+#suivezMoi a {
+    color: #fff;
+}
+
+#suivezMoi a:hover {
+    opacity: 0.6;
+    color: #fff;
+    transition: 0.7s;
+}
+
+#ML {
+    text-align: center;
+}
+
+#ML a{
+    color: #fff;
+    opacity: 0.5;
+}
+
+#ML a:hover {
+    text-decoration: none;
+    opacity: 1;
+    color: #fff;
+    transition: 0.7s;
+}
+
+/* navbar responsive */
+
+
+#menu-bt {
+    display: none;
+}
+
+#burger {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        max-height: 0;
+        overflow: hidden;
+        display: block !important;
+    }
+    #menu-bt:checked~nav {
+        max-height: 300px;
+    }
+
+}
+
+/*end navbar responsive */
+
+
+
+@media (max-width: 768px) {
+  nav {
+      max-height: 0;
+      overflow: hidden;
+      display: block !important;
+      padding: 0!important;
+  }
+  #menu-bt:checked~nav {
+      max-height: 300px;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    }
+}
+
+
+@media (min-width: 769px) {
+    #menuburger {
+        display: none;
+    }
+}
+
+/* animation */
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  /* fin animation */
